@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model TecReview.Models.Item
+
+<div class="card" style="width: 18rem; background-color: #f2eeee">
+    <a asp-controller="Items" asp-action="Details" asp-route-id="@Model.ItemId">
+        <img data-toggle="tooltip"
+             data-html="true"
+             data-placement="bottom"
+             title="@Html.DisplayFor(model => model.Summery)"
+             class="card-img-top"
+             data-src="holder.js/100px180/"
+             alt="100%x180"
+             style="height: 180px; width: 100%; display: block;"
+             src="@Html.DisplayFor(model => model.HomeImageUrl)"
+             data-holder-rendered="true">
+    </a>
+    <div class="card-body">
+        <h5 class="card-title">@Html.DisplayFor(model => model.Header)</h5>
+        <!--<p class="card-text">@Html.DisplayFor(model => model.Summery)</p>-->
+        <a class="btn btn-sm btn-outline-secondary" asp-controller="Items" asp-action="Details" asp-route-id="@Model.ItemId">Read more...</a>
+    </div>
+</div>
