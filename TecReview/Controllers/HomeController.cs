@@ -40,9 +40,7 @@ namespace TecReview.Controllers
                     .FirstOrDefaultAsync(c => c.CategoryId == mainItem.CategoryId);
             }
 
-            // TODO: Actually calculate the featured items
-            ViewData["Items"] = await _context.Items.ToListAsync();
-            ViewData["Featured"] = await _context.Items.Skip(1).Take(2).ToListAsync();
+            ViewData["Featured"] = await _context.Items.OrderBy(x => new Random().Next()).Take(2).ToListAsync();
             ViewData["Recent"] = await _context.Items.OrderByDescending(x => x.DateCreated).Take(3).ToListAsync();
 
             return View();
