@@ -1,0 +1,34 @@
+﻿#statistics-graph {
+    font: 10px sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+#pie-chart {
+    margin: auto;
+    text-align: center;
+}
+
+.y.axisLeft text {
+    fill: steelblue;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.bar1 {
+    fill: steelblue;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.slice text {
+    font-size: 16pt;
+    font-family: Arial;
+}

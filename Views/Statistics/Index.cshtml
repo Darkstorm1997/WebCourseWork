@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8">
+
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/statistics.css">
+</head>
+
+<body>
+<h2>Statistics</h2>
+<br /><br />
+
+<div class="row"><h4>Comments per month</h4></div>
+<div id="statistics-graph"></div>
+
+<div class="row"><h4>Common item categories</h4></div>
+<div id="pie-chart"></div>
+
+<div class="row"><h4>Item locations</h4></div>
+<div id="my-map" style="margin: auto; text-align: center; position: relative; width: 600px; height: 600px;"></div>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script src="js/statistics.js"></script>
+
+<script src="js/statistics-map.js"></script>
+<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=LoadMap" async defer></script>
+</body>
