@@ -5,7 +5,7 @@
 
 @model Tuple<IEnumerable<Item>, IEnumerable<Comment>>
 @{
-    ViewBag.Title = "Search";
+    ViewData["Title"] = "Statistics";
 }
 
 <h2>@ViewBag.Title</h2>
@@ -34,10 +34,10 @@
                 </select>
             </div>
             <div class="col-sm">
-                <input id="title-input" type="text" class="form-control" placeholder="Title" />
+                <input id="title-input" type="text" class="form-control" placeholder="Item name" />
             </div>
             <div class="col-sm">
-                <input id="summery-input" type="text" class="form-control" placeholder="Summery" />
+                <input id="summery-input" type="text" class="form-control" placeholder="Item Summery" />
             </div>
             <div class="col-sm">
                 <input id="items-date-input" type="date" class="form-control" />
@@ -68,7 +68,7 @@
 @section Scripts
     {
     <script id="searchedItemsTmpl" type="text/x-jQuery-tmpl">
-        <a href="#">${header}</a>
+        <a href="Items/Details/${itemId}">${header}</a>
         <br />
     </script>
 
@@ -114,7 +114,7 @@
                 ).then(function (items) {
                     $("#searched-results").html("");
                     items.forEach(item => {
-                        $("#searchedItemsTmpl").tmpl(item).appendTo("#searched-results");
+                        $("#searchedItemsTmpl").tmpl(header=item, itemId=item.itemId).appendTo("#searched-results");
                     })
                 })
             }

@@ -44,19 +44,15 @@
                         </a>
                     </li>
 
-                    <li class="nav-item ml-3">
-                        @if (SignInManager.IsSignedIn(User))
-                        {
-                            <span class="badge badge-danger">WARNING: ADMIN MODE</span>
-                        }
-                        else
+                    <li class="nav-item">
+                        @if (!SignInManager.IsSignedIn(User))
                         {
                             <a href="https://twitter.com/mideastbeasties?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow Us</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         }
                     </li>
 
-                    <li class="nav-item ml-3">
+                    <li class="nav-item">
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="form-inline my-2 my-lg-0">
