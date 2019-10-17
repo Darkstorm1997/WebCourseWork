@@ -44,7 +44,7 @@ body {
 }
 
 .animate-logo {
-    height: 0;
+    height: 30px;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
