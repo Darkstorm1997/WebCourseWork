@@ -12,6 +12,8 @@ namespace TecReview.Controllers
     public class HomeController : Controller
     {
         private readonly TecReviewContext _context;
+        private const int MAIN_ITEMS_NUM = 3;
+        private const int FEATURED_ITEMS_NUM = 3;
 
         public HomeController(TecReviewContext context)
         {
@@ -30,18 +32,24 @@ namespace TecReview.Controllers
             ViewData["Categories"] = categories;
 
             ViewData["MainItem"] = null;
-            ViewData["MainItemCategory"] = null;
+            ViewData["Featured"] = null;
+            ViewData["Recent"] = null;
 
+            
             if (_context.Items.Any())
             {
-                var mainItem = await _context.Items.FirstAsync();
-                ViewData["MainItem"] = mainItem;
-                ViewData["MainItemCategory"] = await _context.Categories
-                    .FirstOrDefaultAsync(c => c.CategoryId == mainItem.CategoryId);
-            }
+                var items = _context.Items.OrderBy(x => new Random().Next());
 
-            ViewData["Featured"] = await _context.Items.OrderBy(x => new Random().Next()).Take(2).ToListAsync();
-            ViewData["Recent"] = await _context.Items.OrderByDescending(x => x.DateCreated).Take(3).ToListAsync();
+                var mainItems = await items.Take(MAIN_ITEMS_NUM).ToListAsync();
+                var featuredItems = await items.Skip(MAIN_ITEMS_NUM).Take(FEATURED_ITEMS_NUM).ToListAsync();
+
+                ViewData["MainItems"] = mainItems;
+                ViewData["Featured"] = featuredItems;
+
+                ViewData["Recent"] = await _context.Items.OrderByDescending(x => x.DateCreated).Take(3).ToListAsync();
+            }
+            
+            
 
             return View();
         }

@@ -14,22 +14,15 @@
 <div>
     <h4 class="text-dark">@Model.Description</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <h6>Existing Items in Category:</h6>
+    <br />
+
+    <div class="row">
         @foreach (Item item in (List<Item>)ViewData["Items"])
         {
-            <div class="row">
-                <partial name="_ItemHorizontal" model="item" />
+            <div class="col-md-3">
+                <partial name="_ItemVertical" model="item" />
             </div>
         }
-
-    </dl>
-</div>
-<div>
-
-    @if (SignInManager.IsSignedIn(User))
-    {
-        <a asp-action="Edit" asp-route-id="@Model.CategoryId">Edit</a>
-        <a asp-action="Index">Categories List</a>
-    }
-
+    </div>
 </div>

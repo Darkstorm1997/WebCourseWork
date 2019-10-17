@@ -52,7 +52,7 @@ body {
     animation-duration: 2s;
 }
 .form-login {
-    background-color: #EDEDED;
+    background-color: #D0D0FF;
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -83,4 +83,13 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }

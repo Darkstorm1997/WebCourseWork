@@ -1,40 +1,43 @@
 @model IEnumerable<TecReview.Models.Item>
 @{
-    ViewData["Title"] = "Index";
-    ViewData["Tab"] = "Home";
+    ViewData["Title"] = "Home";
 }
 
 <br/>
 
-<div id="home-page">
-    <br/>
-    @{
-        var mainItem = (Item)ViewData["MainItem"];
-        if (mainItem != null)
-        {
-            <!--Main featured item-->
-            <div class="card flex-md-row mb-4 box-shadow h-md-250 text-light bg-dark shadow">
-                <div class="card-body d-flex flex-column align-items-start">
-                    <strong class="d-inline-block mb-2 text-primary">
-                        <partial name="_CategoryBadge" model="@((Category)ViewData["MainItemCategory"])" />
-                    </strong>
-                    <h3 class="mb-0">
-                        <a asp-controller="Items" asp-action="Details" asp-route-id="@mainItem.ItemId" class="text-success">@mainItem.Header</a>
-                    </h3>
-                    <div class="mb-1 text-muted">@mainItem.DateCreated</div>
-                    <section class="main-item-content">
-                        <p class="card-text mb-auto" style="column-span: all"><strong>@mainItem.Summery</strong></p>
-                        <p class="card-text mb-auto">@(mainItem.Content.Substring(0, 275) + "...")</p>
-                    </section>
-                    <br />
-                    <a class="btn btn-sm btn-outline-secondary" asp-controller="Items" asp-action="Details" asp-route-id="@mainItem.ItemId">Read more</a>
-                </div>
-                <a asp-controller="Items" asp-action="Details" asp-route-id="@mainItem.ItemId">
-                    <img class="card-img-right flex-auto d-none d-md-block" style="width: 550px; height: auto;" src="@mainItem.HomeImageUrl" data-holder-rendered="true" />
-                </a>
-            </div>
-        }
-    }
+<div>
+    <br />
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+            @{
+                var items = (List<Item>)ViewData["MainItems"];
+                foreach (var item in items)
+                {
+                    var activeClass = "";
+                    if (items.First() == item)
+                    {
+                        activeClass = " active";
+                    }
+
+                    <div class="carousel-item @activeClass">
+                        <div class="d-block w-100">
+                            <partial name="_ItemMain" model="@item" />
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between border rounded">

@@ -1,21 +1,23 @@
 ﻿@model IEnumerable<TecReview.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Categories";
 }
 
-<h2>Index</h2>
-
+<br />
+<h2 class="text-center">Existing Categories</h2>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New Category</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                Category Name
             </th>
-            <th></th>
+            <th>
+                Actions
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -25,9 +27,9 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoryId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> 
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.CategoryId">Details</a> 
+                <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
             </td>
         </tr>
 }

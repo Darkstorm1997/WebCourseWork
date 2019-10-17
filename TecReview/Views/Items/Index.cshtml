@@ -1,23 +1,23 @@
 ﻿@model IEnumerable<TecReview.Models.Item>
 
 @{
-    ViewData["Title"] = "Browse";
-    ViewData["Tab"] = "Browse";
+    ViewData["Title"] = "Items";
 }
 
-<h2>Browse all items</h2>
+<br />
+<h2 class="text-center">Existing items</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Create New Item</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Header)
+                Item
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItemId)
+                Actions
             </th>
         </tr>
     </thead>
@@ -29,12 +29,9 @@
                     @Html.DisplayFor(modelItem => item.Header)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ItemId)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.ItemId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ItemId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ItemId">Delete</a>
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ItemId">Edit</a> 
+                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.ItemId">Details</a> 
+                    <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.ItemId">Delete</a>
                 </td>
             </tr>
         }
