@@ -40,9 +40,9 @@ var make_markdown_editor = function (e, initial_content) {
 }
 
 var markdown_to_html = function (markdown_string) {
-    var converter = new showdown.Converter({ extensions: [showdown_converters] }),
-        text = decodeHtml(markdown_string),
-        html = converter.makeHtml(text);
+    var converter = new showdown.Converter({ extensions: [showdown_converters] });
+    text = decodeHtml(markdown_string);
+    html = converter.makeHtml(text);
 
     return html;
 }

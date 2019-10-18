@@ -6,7 +6,7 @@
     })
 }
 
-var delete_comment = function (id) {
+var _delete_comment = function (id) {
     return new Promise(resolve => {
         $.ajax({
             url: "/api/Comments/" + id,
@@ -70,5 +70,35 @@ var get_searched_comments = function (author, content, date) {
                 resolve(comments)
             }
         });
+    })
+}
+
+var post_comment = function (itemId) {
+    var data = $("#newCommentForm").serializeArray()
+
+    if (data[0].value == "" || data[1].value == "") {
+        $('#errorCommentModal').modal('show');
+    }
+
+    new_comment(data[0].value, data[1].value, data[2].value).then(function () {
+        update_comments(itemId)
+    });
+
+    console.log(data)
+}
+
+var delete_comment = function (id, itemId) {
+    _delete_comment(id).then(function () {
+        update_comments(itemId);
+    })
+}
+
+var update_comments = function (itemId) {
+    get_comments(itemId).then(function (comments) {
+        $("#commentsList").html("");
+        comments.forEach(comment => {
+            $("#commentTemplate").tmpl(comment).appendTo("#commentsList");
+            console.log(comment)
+        })
     })
 }
