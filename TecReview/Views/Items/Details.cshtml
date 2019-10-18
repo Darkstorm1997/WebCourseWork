@@ -41,11 +41,6 @@
     </a>
 </div>
 
-<div id="adblocker-warning">
-    Our website is made possible by displaying online advertisements to our visitors.<br>
-    Disable your ad blocker in order to see the content of this item.
-</div>
-
 <div class="row">
     <div class="col-md-8">
         <!-------------------------------CONTENT--------------------------------->
@@ -54,42 +49,21 @@
                 @Model.Summery
             </div>
         </section>
-        </br>
+        <br />
+
         <section>
             <div id="ItemContent" class="border-bottom"></div>
         </section>
+
+        <section>
+                <h3>Related...</h3>
+                <div class="related-items-list row" id="relatedItemsList">
+                </div>
+        </section>
+
         <!-------------------------------COMMENTS--------------------------------->
         <section>
-            <div class="col-12">
-                <h3>Comments</h3>
-                <div class="border-bottom mb-2">
-                    <form id="newCommentForm">
-                        <div class="form-group form-group-sm">
-                            <input type="text" name="Author" class="form-control" placeholder="Who are you?" />
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <textarea name="Content" class="form-control" rows="2" placeholder="And what do you think about this?"></textarea>
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <input type="hidden" name="ItemId" class="form-control" value="@Model.ItemId" />
-                        </div>
-                        <div class="form-group form-group-sm">
-                            <button type="button" class="btn btn-success btn-sm mr-2" data-toggle="modal" data-target="#commentModal">Post it!</button>
-                            Remember: Keep it clean!
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-12">
-                    <small id="commentsCountLabel">
-                        Loading comments...
-                    </small>
-                    <div class="list-group" id="commentsList">
-                    </div>
-                </div>
-                <div id="result">
-
-                </div>
-            </div>
+            <partial name="_Comments" model="@Model" />
         </section>
     </div>
     <div class="col-lg-4">
@@ -103,86 +77,19 @@
                         <h3>Location:<span class="badge badge-secondary">@Model.Location</span></h3>
                         <div class="media">
                             <div class=" media-left">
-                                <div id="itemMap" class="img-thumbnail" style="width: 350px; height: 300px;"></div>
+                                <div id="itemMap" class="img-thumbnail" style="width: 350px; height: 500px;"></div>
                             </div>
                         </div>
                     </div>
                 }
-
-                <div class="mt-2">
-                    <h3>Related...</h3>
-                    <div class="related-items-list" id="relatedItemsList">
-                    </div>
-                </div>
             </div>
         </aside>
     </div>
 </div>
 
-<!-------------------------------COMMENTS--------------------------------->
-<div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="commentModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="commentModalLabel">Are you sure?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Are you sure you want to post this comment?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="post_comment()">Post comment!</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="errorCommentModal" tabindex="-1" role="dialog" aria-labelledby="errorCommentModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="errorCommentModalLabel">Error</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">X</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Content or author can't be empty!
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-------------------------------ADVERTISEMENTS--------------------------------->
 <div id="footerAdvWrapper" style="width:100%; position: fixed; bottom: 0; text-align: center;">
-    <script type="text/javascript">
-        var incomingList = [{
-            "t": 1541269796,
-            "hash": "bc9yxeefu",
-        }, {
-            "t": 1541278805,
-            "hash": "bzjib88jd",
-        }, {
-            "t": 1541279046,
-            "hash": "bzj5off97",
-        }, {
-            "t": 1541279342,
-            "hash": "bcpib88jd",
-        }, {
-            "t": 1541279595,
-            "hash": "bc50xeefu",
-        }];
-
-        var randomAdvertise = Math.round(Math.random() * (incomingList.length - 1));
-
-        var bannersnack_embed = { "hash": incomingList[randomAdvertise].hash, "width": 728, "height": 80, "t": incomingList[randomAdvertise].t, "userId": 38365105, "type": "html5" };
-    </script>
+    <script src="~/js/ads.js" type="text/javascript"></script>
     <script type="text/javascript" src="//cdn.bannersnack.com/iframe/embed.js"></script>
 </div>
 
@@ -191,65 +98,35 @@
 @section Scripts
     {
     <!-------------------------------TEMPLATES--------------------------------->
-    <script id="commentTemplate" type="text/x-jQuery-tmpl">
-        <div class="media mb-1 border-bottom">
-            <div class="media-left">
-                <table class="comment-number-container mr-2">
-                    <tbody>
-                    <td class="align-middle text-center">#${sequence}</td>
-                    </tbody>
-                </table>
-            </div>
-            <div class="media-body">
-                <small>${author}</small>
-                <p>${content}</p>
-            </div>
-            @if (SignInManager.IsSignedIn(User))
-            {
-                <button class="btn btn-danger" onclick="_delete_comment(${commentId})">X</button>
-            }
-
-        </div>
-    </script>
-
+ 
     <script id="relatedItemTemplate" type="text/x-jQuery-tmpl">
-        <div class="card">
+        <div class="card text-light bg-dark col-md-4">
             <a asp-controller="Items" asp-action="Details" asp-route-id="@Model.ItemId">
                 <img class="card-img-top"
-                     style="height: 180px; width: 100%; display: block;"
+                     style="height: 130px; width: 100%; display: block;"
                      src="${homeImageUrl}"
                      data-holder-rendered="true">
             </a>
             <div class="card-body">
                 <h5 class="card-title">${header}</h5>
-                <a class="btn btn-sm btn-outline-secondary" asp-controller="Items" asp-action="MoveRelated"
+                <a class="btn btn-sm btn-secondary" asp-controller="Items" asp-action="MoveRelated"
                    href="/Items/MoveRelated/?prevId=@Model.ItemId&newId=${itemId}">Read more...</a>
             </div>
         </div>
     </script>
 
-    <script src="~/js/ads.js" type="text/javascript"></script>
-
     <!-------------------------------SCRIPTS--------------------------------->
     <script async type="text/javascript">
         $(document).ready(function () {
-            // Check for adblock
-            if (!document.getElementById('check-for-adblocker')) {
-                document.getElementById('adblocker-warning').style.display = 'block';
-            }
-            else {
-
-                $("#ItemContent").html(markdown_to_html("@Model.Content"));
-
-                load_markdown_tweeter()
-            }
+            $("#ItemContent").html(markdown_to_html("@Model.Content"));
+            load_markdown_tweeter()
 
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             });
 
             update_related_items()
-            update_comments()
+            update_comments(@Model.ItemId)
         })
 
         var update_related_items = function () {
@@ -258,37 +135,6 @@
                 relatedItems.forEach(relatedItem => {
                     $("#relatedItemTemplate").tmpl(relatedItem).appendTo("#relatedItemsList");
                 })
-            })
-        }
-
-        var post_comment = function () {
-            var data = $("#newCommentForm").serializeArray()
-
-            if (data[0].value == "" || data[1].value == "") {
-                $('#errorCommentModal').modal('show');
-            }
-
-            new_comment(data[0].value, data[1].value, data[2].value).then(function () {
-                update_comments()
-            });
-
-            console.log(data)
-        }
-
-        var _delete_comment = function (id) {
-            delete_comment(id).then(function () {
-                update_comments();
-            })
-        }
-
-        var update_comments = function () {
-            get_comments(@Model.ItemId).then(function (comments) {
-                $("#commentsList").html("");
-                comments.forEach(comment => {
-                    $("#commentTemplate").tmpl(comment).appendTo("#commentsList");
-                    console.log(comment)
-                })
-                $("#commentsCountLabel").html(comments.length + " Comments")
             })
         }
 
