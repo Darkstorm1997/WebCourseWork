@@ -3,42 +3,7 @@
     ViewData["Title"] = "Home";
 }
 
-<br/>
-
 <div>
-    <br />
-    
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-
-            @{
-                var items = (List<Item>)ViewData["MainItems"];
-                foreach (var item in items)
-                {
-                    var activeClass = "";
-                    if (items.First() == item)
-                    {
-                        activeClass = " active";
-                    }
-
-                    <div class="carousel-item @activeClass">
-                        <div class="d-block w-100">
-                            <partial name="_ItemMain" model="@item" />
-                        </div>
-                    </div>
-                }
-            }
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between border rounded">
             @foreach (var c in (Dictionary<Category, List<Item>>)ViewData["Categories"])
@@ -48,55 +13,30 @@
         </nav>
     </div>
 
-    <h3 class="pb-3 mb-4 font-italic border-bottom">Featured <small>The MUST READ items</small></h3>
     <div class="row mb-2">
         <div class="col-md-10">
-            @foreach (var item in ((List<Item>)ViewData["Featured"]))
-            {
-                <div class="col-md-12">
-                    <partial name="_ItemHorizontal" model="@item" />
-                </div>
-            }
+            <div class="row">
+                @foreach (Item item in (List<Item>)ViewData["MainItems"])
+                {
+                    <div class="col-md-4">
+                        <partial name="_ItemVertical" model="item" />
+                    </div>
+                }
+            </div>
         </div>
 
+
         <div class="col-md-2">
-            <h3 class="pb-3 mb-4 font-italic border-bottom">Recent</h3>
+            <h3 class="pb-3 mb-4 border-bottom">Recent</h3>
             @foreach (Item ar in ((List<Item>)ViewData["Recent"]))
             {
                 <div class="card">
                     <a asp-controller="Items" asp-action="Details" asp-route-id="@ar.ItemId">
-                        <img src="@ar.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true" title="<h4>@ar.Header</h4><p>@ar.Summery</p>" />
+                        <img src="@ar.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true"/>
+                        <h4>@ar.Header</h4>
                     </a>
                 </div>
             }
-
-            <div class="card">
-                <strong class="d-inline-block mb-2 text-primary">The weather today</strong>
-                <a href="https://www.accuweather.com/en/il/tel-aviv/215854/weather-forecast/215854" class="aw-widget-legal"></a>
-                <div id="awcc1540992229894" class="aw-widget-current" data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1540992229894"></div>
-                <script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
-            </div>
         </div>
     </div>
-
-    @foreach (var c in (Dictionary<Category, List<Item>>)ViewData["Categories"])
-    {
-        var category = c.Key;
-
-        <br />
-        <h3 class="pb-3 mb-4 font-italic border-bottom">
-            <a asp-controller="Categories" asp-action="Details" asp-route-id="@category.CategoryId" style="color: @category.HexColor !important;">
-                @category.Name <small class="text-dark">@category.Description</small>
-            </a>
-        </h3>
-
-        <div class="row">
-            @foreach (Item item in c.Value)
-            {
-                <div class="col-md-3">
-                    <partial name="_ItemVertical" model="item" />
-                </div>
-            }
-        </div>
-    }
 </div>
