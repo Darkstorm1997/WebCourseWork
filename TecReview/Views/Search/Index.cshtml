@@ -67,6 +67,7 @@
 
 @section Scripts
     {
+
     <script id="searchedItemsTmpl" type="text/x-jQuery-tmpl">
         <a href="Items/Details/${itemId}">${header}</a>
         <br />
@@ -75,11 +76,7 @@
     <script id="searchedCommentsTmpl" type="text/x-jQuery-tmpl">
         <div class="media mb-1 border-bottom">
             <div class="media-left">
-                <table class="comment-number-container mr-2">
-                    <tbody>
-                    <td class="align-middle text-center">#${sequence}</td>
-                    </tbody>
-                </table>
+                <h2>${sequence}.</h2>
             </div>
             <div class="media-body">
                 <small>${author}</small>
@@ -87,11 +84,6 @@
             </div>
 
             <a class="btn btn-success" href="/Items/Details/${itemId}">Go</a>
-
-            @if (SignInManager.IsSignedIn(User))
-            {
-                <button class="btn btn-danger" onclick="_delete_comment(${commentId})">X</button>
-            }
 
         </div>
     </script>
@@ -132,10 +124,5 @@
             }
         }
 
-        var _delete_comment = function (id) {
-            delete_comment(id).then(function () {
-                update_searched_results('comments');
-            })
-        }
     </script>
 }
