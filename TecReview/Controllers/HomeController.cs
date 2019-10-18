@@ -12,8 +12,7 @@ namespace TecReview.Controllers
     public class HomeController : Controller
     {
         private readonly TecReviewContext _context;
-        private const int MAIN_ITEMS_NUM = 3;
-        private const int FEATURED_ITEMS_NUM = 3;
+        private const int MAIN_ITEMS_NUM = 9;
 
         public HomeController(TecReviewContext context)
         {
@@ -32,7 +31,6 @@ namespace TecReview.Controllers
             ViewData["Categories"] = categories;
 
             ViewData["MainItem"] = null;
-            ViewData["Featured"] = null;
             ViewData["Recent"] = null;
 
             
@@ -41,10 +39,8 @@ namespace TecReview.Controllers
                 var items = _context.Items.OrderBy(x => new Random().Next());
 
                 var mainItems = await items.Take(MAIN_ITEMS_NUM).ToListAsync();
-                var featuredItems = await items.Skip(MAIN_ITEMS_NUM).Take(FEATURED_ITEMS_NUM).ToListAsync();
 
                 ViewData["MainItems"] = mainItems;
-                ViewData["Featured"] = featuredItems;
 
                 ViewData["Recent"] = await _context.Items.OrderByDescending(x => x.DateCreated).Take(3).ToListAsync();
             }
