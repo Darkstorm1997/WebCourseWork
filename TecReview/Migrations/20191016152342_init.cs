@@ -222,12 +222,12 @@ namespace TecReview.Migrations
                 columns: new[] { "CategoryId", "ColorARGB", "Description", "Name" },
                 values: new object[,]
                 {
-                    { 1, -15132304, "World wide news", "World" },
-                    { 2, -7667573, "Debates and conflicts", "Politics" },
-                    { 3, -16751616, "Trade, commerce and money", "Business" },
-                    { 4, -7667712, "And its a score!", "Sports" },
-                    { 5, -2354116, "Music, movies and the starts", "Culture" },
-                    { 6, -13726889, "I Think...", "Opinions" }
+                    { 1, -15132304, "All about high quality headphones", "Headphones" },
+                    { 2, -7667573, "Speaks for home and for studio", "Speakers" },
+                    { 3, -16751616, "Laptops and desktops", "Computers" },
+                    { 4, -7667712, "iPhone, Samsung and mor", "Cellphones" },
+                    { 5, -2354116, "Small computers which could be carried to anywhere", "Tablets" },
+                    { 6, -13726889, "Mouse, keyboards and more", "Accessories" }
                 });
 
             migrationBuilder.InsertData(
@@ -258,7 +258,7 @@ namespace TecReview.Migrations
 
                 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
                 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "Iran blames US and Saudi Arabia for terror attack", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", true, "טהרן, אירן", "Iran blames the US and Saudi Arabia for military parade terror attack" },
+                ", new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "test333 US and Saudi Arabia for terror attack", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", true, "טהרן, אירן", "test333 the US and Saudi Arabia for military parade terror attack" },
                     { 3, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 
@@ -282,7 +282,7 @@ namespace TecReview.Migrations
 
                 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
                 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 3, 7, 2, 22, 23, 0, DateTimeKind.Unspecified), "Russia: We were mislead by israel", "https://images.haarets.co.il/image/upload/w_2184,h_1270,x_0,y_75,c_crop,g_north_west/w_857,h_482,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/v1537691679/1.6494059.1232180831.jpg", true, "תל אביב, ישראל", "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk." },
+                ", new DateTime(2018, 3, 7, 2, 22, 23, 0, DateTimeKind.Unspecified), "test 123 mislead by israel", "https://images.haarets.co.il/image/upload/w_2184,h_1270,x_0,y_75,c_crop,g_north_west/w_857,h_482,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/v1537691679/1.6494059.1232180831.jpg", true, "תל אביב, ישראל", "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk." },
                     { 4, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 

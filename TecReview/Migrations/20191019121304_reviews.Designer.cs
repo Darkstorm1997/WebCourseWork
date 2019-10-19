@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TecReview.Models;
 
 namespace TecReview.Migrations
 {
     [DbContext(typeof(TecReviewContext))]
-    partial class TecReviewContextModelSnapshot : ModelSnapshot
+    [Migration("20191019121304_reviews")]
+    partial class reviews
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -287,7 +289,7 @@ All four attackers were killed during clashes with security forces, IRNA reporte
 
 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-", DateCreated = new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), Header = "Iran111 blames US and Saudi Arabia for terror attack", HomeImageUrl = "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", IsShowMap = true, Location = "טהרן, אירן", Summery = "test333 the US and Saudi Arabia for military parade terror attack" },
+", DateCreated = new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), Header = "test333 US and Saudi Arabia for terror attack", HomeImageUrl = "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", IsShowMap = true, Location = "טהרן, אירן", Summery = "test333 the US and Saudi Arabia for military parade terror attack" },
                         new { ItemId = 2, CategoryId = 2, Content = @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 

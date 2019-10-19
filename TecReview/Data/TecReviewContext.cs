@@ -38,43 +38,43 @@ namespace TecReview.Models
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 1,
-                Name = "World",
-                Description = "World wide news",
+                Name = "Headphones",
+                Description = "All about high quality headphones",
                 Color = System.Drawing.Color.MidnightBlue
             });
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 2,
-                Name = "Politics",
-                Description = "Debates and conflicts",
+                Name = "Speakers",
+                Description = "Speaks for home and for studio",
                 Color = System.Drawing.Color.DarkMagenta
             });
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 3,
-                Name = "Business",
-                Description = "Trade, commerce and money",
+                Name = "Computers",
+                Description = "Laptops and desktops",
                 Color = System.Drawing.Color.DarkGreen
             });
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 4,
-                Name = "Sports",
-                Description = "And its a score!",
+                Name = "Cellphones",
+                Description = "iPhone, Samsung and more",
                 Color = System.Drawing.Color.DarkRed
             });
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 5,
-                Name = "Culture",
-                Description = "Music, movies and the starts",
+                Name = "Tablets",
+                Description = "Small computers which could be carried to anywhere",
                 Color = System.Drawing.Color.Crimson
             });
             modelBuilder.Entity<Category>().HasData(new Category
             {
                 CategoryId = 6,
-                Name = "Opinions",
-                Description = "I Think...",
+                Name = "Accessories",
+                Description = "Mouse, keybo",
                 Color = System.Drawing.Color.SeaGreen
             });
 
@@ -83,12 +83,12 @@ namespace TecReview.Models
                 {
                     ItemId = 1,
                     CategoryId = 1,
-                    Header = "Iran blames US and Saudi Arabia for terror attack",
-                    Summery = "Iran blames the US and Saudi Arabia for military parade terror attack",
-                    DateCreated = new DateTime(2018, 5, 1, 8, 30, 52),
+                    Header = "Sony WH-1000XM3",
+                    Summery = "If you settle only for the best",
+                    DateCreated = new DateTime(2019, 10, 19, 8, 30, 52),
                     HomeImageUrl =
-                        "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101",
-                    Location = "טהרן, אירן",
+                        "https://www.sony.com/image/eb0062b3db03748efc7f5ca3fd82ccc5?fmt=pjpeg&bgcolor=FFFFFF&bgc=FFFFFF&wid=2515&hei=1320",
+                    Location = "KSP החשמונאים, תל אביב",
                     IsShowMap = true,
                     Content = exampleContent
                 },
@@ -109,7 +109,7 @@ namespace TecReview.Models
                 {
                     ItemId = 3,
                     CategoryId = 1,
-                    Header = "Russia: We were mislead by israel",
+                    Header = "test 123 mislead by israel",
                     Summery =
                         "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk.",
                     DateCreated = new DateTime(2018, 3, 7, 2, 22, 23),
@@ -200,7 +200,7 @@ namespace TecReview.Models
                 {
                     ItemId = 10,
                     CategoryId = 3,
-                    Header = "Comcast outbids 21st Century Fox for Sky",
+                    Header = "Test 123",
                     Summery =
                         "American cable giant Comcast lodged a winning bid of about $40 billion (£30.6 billion) for Sky following a rare, three round auction managed by UK's Takeover Panel",
                     DateCreated = new DateTime(2018, 8, 6, 11, 10, 2),
