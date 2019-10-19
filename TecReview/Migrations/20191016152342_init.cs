@@ -235,270 +235,223 @@ namespace TecReview.Migrations
                 columns: new[] { "ItemId", "CategoryId", "Content", "DateCreated", "Header", "HomeImageUrl", "IsShowMap", "Location", "Summery" },
                 values: new object[,]
                 {
-                    { 1, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+                    { 1, 1, @"The third iteration of the WH-1000X is more comfortable, sounds slightly better and features even better noise-canceling performance along with USB-C charging.
 
 
-                example paragraph
-                --
+                The excellent-sounding Sony WH-1000XM3 is more comfortable and 20 percent lighter than its predecessor. It offers slightly improved noise canceling and performs better as a headset for making calls. Battery life is strong, and it has some nifty extra features geared toward frequent travelers.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+                Your ears can get a little warm inside the ear cups; I encountered some adaptive noise-canceling hiccups.
+                
+                With its more comfortable fit and improved performance, the Sony WH-1000XM3 becomes the noise-canceling headphone to beat.
+                ", new DateTime(2019, 10, 17, 8, 30, 52, 0, DateTimeKind.Unspecified), "Sony WH-1000XM3", "https://www.sony.co.in/image/4b3139b30cb85e0d3a03a94ab738b7b7?fmt=png-alpha&wid=1014&hei=396", true, "החשמונאים 88, תל אביב", "Best noise canceling headphones" },
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+                {2, 1, @"The Bose Noise Cancelling Headphones 700 are very comfortable, have excellent noise canceling and work really well as a headset for making calls. They sound better than the Quiet Comfort 35 II, are loaded with features, including the option for hands-free Alexa and Bose AR. Noise-canceling levels are adjustable, they work without power; USB-C charging; transparency mode.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+$50 to $100 more than their closest competitors; QuietComfort 35 II is slightly more comfortable; battery life isn't as good as the of some competitors; the accompanying mobile app isn't fully baked.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+While not a quantum leap forward over the QC35 IIs, the Bose Noise Cancelling Headphones 700 offers slightly better noise canceling, sound and call quality.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+", new DateTime(2019, 10, 17, 8, 30, 52, 0, DateTimeKind.Unspecified), "Bose Noise Cancelling Headphones 700", "https://cdn.erosdigitalhome.ae/pub/media/catalog/product/cache/image/606x779/e9c3970ab036de70892d86c6d221abfe/c/q/cq5dam.web.1920.1920_2__1.png", true, "וייצמן 14, תל אביב", "Top noise-canceling headphones take it up just a notch" },
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "test333 US and Saudi Arabia for terror attack", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", true, "טהרן, אירן", "test333 the US and Saudi Arabia for military parade terror attack" },
-                    { 3, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+{3, 1, @"The second-generation AirPods add a couple of small but key improvements to the original, including always-on voice recognition and a wireless charging case option. They're a top-notch headset for making calls, indoors and out. Apple's new H1 chip also allows for faster connections with all of your Apple devices, rock solid wireless connectivity, and an hour more talk time.
 
+No design changes to help them fit more ears securely; their sound hasn't improved, and their open design allows for a lot of ambient noise to leak in.
 
-                example paragraph
-                --
+The new AirPods are an incremental upgrade to an already excellent, fully wireless headphone, but sound quality, design and fit are basically the same.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+", new DateTime(2019, 10, 13, 18, 3, 5, 0, DateTimeKind.Unspecified), "Apple AirPods", "https://d3m9l0v76dty0.cloudfront.net/system/photos/3714049/large/731f3336217fd72a0bcb6a7c7ab7c3f9.jpg", true, "דיזינגוף 149, תל אביב", "The king of truly wireless earphones is crowned with small enhancements" },
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+{4, 1, @"The Jabra Active Elite 65t are fully sweat-resistant truly wireless earphones that fit comfortably and securely. They sound excellent, perform reliably and are great for making calls, with two microphones in each earpiece. Battery life is decent at 5 hours and the included charging case delivers two extra charges. A quick-charge feature allows you to get 1.5 hours of juice from a 15-minute charge.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+The relatively tight, noise-isolating fit isn't for everyone. Motion sensor doesn't have much use at this point.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+The Jabra Active Elite 65t truly wireless earphones are the best alternative to Apple's AirPods, but the stepdown non-Elite model will save you a bit of cash.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+", new DateTime(2019, 9, 1, 8, 10, 53, 0, DateTimeKind.Unspecified), "Jabra Elite Active 65t", "https://www.mea.jabra.com/-/media/Images/Products/Jabra-Elite-65t-Active/Color-Picker/elite_active_65t_blue.png?w=550&la=en-MEA&hash=1B8EB1D2C4E28EB578CED5A8F5FE87D12AAAB554", true, "וייצמן 14, תל אביב", "These wireless headphones beat out AirPods on sound quality" },
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 3, 7, 2, 22, 23, 0, DateTimeKind.Unspecified), "test 123 mislead by israel", "https://images.haarets.co.il/image/upload/w_2184,h_1270,x_0,y_75,c_crop,g_north_west/w_857,h_482,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/v1537691679/1.6494059.1232180831.jpg", true, "תל אביב, ישראל", "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk." },
-                    { 4, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+{5, 1, @"The Bose QuietComfort 35 II headphone adds a dedicated button for Google Assistant, but it can be programmed for other functions, too. Retains its predecessor's top-of-the-line active-noise canceling, excellent wireless Bluetooth sound and extra-comfortable design. Works in wired mode with included cord if battery dies.
 
+ Battery isn't replaceable; same apparent design and performance as previous model.
 
-                example paragraph
-                --
+Existing QC35 owners don't need to upgrade, but the addition of a dedicated Google Assistant button gives the already excellent wireless noise-canceling headphone an extra bit of personality.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+", new DateTime(2019, 8, 6, 3, 4, 5, 0, DateTimeKind.Unspecified), "Bose QuietComfort 35 II", "https://assets.bose.com/content/dam/emails/streams/dubai/qc35.png", true, "שדרות בן גוריון 33, הרצליה", "These already excellent headphones get a touch better" },
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+                {6, 2, @"The Wonderboom is compact, fully waterproof, plays very loud for its size with a good amount of bass for its small size. It also floats in water, is shock resistant and has decent battery life. You can pair two Wonderbooms together to augment the sound.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+No speakerphone capabilities. It's slightly too bulky for travel use.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+For its size, the affordable and durable UE Wonderboom is one of the fullest sounding mini Bluetooth speakers you can buy.
+", new DateTime(2019, 10, 17, 8, 30, 52, 0, DateTimeKind.Unspecified), "UE Wonderboom", "https://img.alicdn.com/imgextra/i4/428722076/TB2YoHrXQ7myKJjSZFzXXXgDpXa_!!428722076.png", true, "החשמונאים 88, תל אביב", "A waterproof mini Bluetooth speaker that packs a punch" },
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+{7, 2, @"The sleek Bose SoundLink Plus Bluetooth speaker sounds excellent for its compact size, has a built-in handle for easy transport and is water-resistant. Battery life is good at 16 hours, there's a threaded tripod mount on the bottom of the speaker and an integrated microphone for speakerphone calls.
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 10, 6, 11, 10, 2, 0, DateTimeKind.Unspecified), "Israel rejects russian claims: IAF did not hide behind russian plane", "https://www.jpost.com/HttpHandlers/ShowImage.ashx?id=350908&w=898&h=628", false, "תל אביב, ישראל", "The IAF did not hide behind any plane and Israeli fighter jets were in Israeli airspace when the Syrians attacked the Russian plane" },
-                    { 5, 1, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+Expensive, and the cradle that makes charging easier is an optional $30 accessory.
 
+Bose's expensive SoundLink Plus is arguably the best-sounding Bluetooth speaker for its size.
+", new DateTime(2019, 7, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "Bose SoundLink Revolve+", "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundlink_revolve_plus_images/images/soundlink_revolve_plus_similar_speakers_revolve_1x1.psd/_jcr_content/renditions/cq5dam.web.320.320.png", true, "וייצמן 14, תל אביב", "This pricey Bluetooth speaker sounds great in every direction" },
 
-                example paragraph
-                --
+{8, 2, @"The affordable Elac Debut 2.0 B6.2 offers class-leading sound along with excellent build quality and attractive looks. The front-facing bass port allows them it be placed close to walls.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+Big, boxy design compared to some competitors. Not as easygoing or forgiving as its predecessor.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+The Elac Debut 2.0 B6.2 is one of the best speakers at this price, with great sound and excellent build quality.
+", new DateTime(2019, 8, 16, 8, 30, 52, 0, DateTimeKind.Unspecified), "Elac Debut 2.0 B6.2", "https://picscdn.redblue.de/doi/pixelboxx-mss-78393194/fee_786_587_png", true, "וייצמן 14, תל אביב", "Clearer sound, better build quality, same incredible value" },
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+{9, 2, @"The affordable Q Acoustics 3020i give smooth, rich sound in a relatively compact design. The speakers are well built, look sweet and are available in a number of attractive finishes.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+Despite simplified speaker connectors, the 3020is are not suited to wall-mounting. The Elac Debut B6.2 offer better performance for the same money.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+The Q Acoustics 3020i bookshelf speakers combine cutting-edge design with excellent sonics and are suited to systems with tight space requirements.
+", new DateTime(2019, 9, 12, 8, 30, 52, 0, DateTimeKind.Unspecified), "Q Acoustics 3020i", "https://www.harmonieaudio.com/wp-content/uploads/2018/03/3020leather.png", true, "החשמונאים 88, תל אביב", "Big, smooth sound from small, affordable speakers" },
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2017, 12, 11, 11, 10, 2, 0, DateTimeKind.Unspecified), "U.S. Terror victomsm ask Trump: bar Abbas", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/428957", false, "תל אביב, ישראל", "The family members called the decision to allow Abbas’s entry to the US \"a slap in the face to every American who has suffered from terror.\"" },
-                    { 2, 2, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+{10, 2, @"The Vizio SB3621 offers excellent performance for an ultra-budget sound bar with great movie sound and toe-tapping music playback. The sound bar offers a decent selection of inputs including Bluetooth and will decode both Dolby and DTS. The sound bar and wireless sub feature excellent build quality and a seamless setup.
 
+The LED display is not very helpful, and the WAV-file-only USB port is a little weird.
 
-                example paragraph
-                --
+The Vizio SB3621n-E8 is the best sound bar under $300 we have ever heard. If you want better TV sound, it's the new budget benchmark.
+", new DateTime(2019, 6, 16, 8, 30, 52, 0, DateTimeKind.Unspecified), "Vizio SB3621", "https://cdn-ssl.vizio.com/skin/frontend/enterprise/vizio_2014/assets/img/soundbar-2019/recommended-SB362An.png?ver=1570215616", true, "וייצמן 14, תל אביב", "The king of the budget sound bars" },
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+{11, 3, @"The XPS 8900 is a decent-looking desktop tower with reasonable expandability. It's only $999 as part of an Oculus Rift bundle, and includes a very good graphics card.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+This VR-on-a-budget configuration may feel dated quickly as VR games become more ambitious. The Core i5 CPU holds this system back from being a PC-gaming workhorse.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+One of the least-expensive Oculus-ready PCs, the Dell XPS 8900 Special Edition hits the required specs for virtual reality, but just barely.
+", new DateTime(2019, 5, 7, 8, 30, 52, 0, DateTimeKind.Unspecified), "Dell XPS 8900 Special Edition", "https://i.dell.com/is/image/DellContent/content/dam/global-site-design/product_images/dell_client_products/desktops/xps_desktops/xps_8930/global_spi/desktop-xps-8930-vmax-cfl-hero-504x350-ng.psd?fmt=png-alpha", true, "החשמונאים 88, תל אביב", "An Oculus-approved, VR-ready desktop for less" },
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+{12, 3, @"The Apple iMac's 27-inch 5K display remains the most color-accurate monitor we've seen thus far in an all-in-one. Improved performance is especially impressive in the Core i9 model. Two USB-C/Thunderbolt connectors drive more external displays and faster file data transfers.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+The design, including thick screen bezels, feels dated. UHS-II SD cards still aren't fully supported. The tilt-only screen doesn't offer enough adjustment options.
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 8, 7, 5, 22, 23, 0, DateTimeKind.Unspecified), "Gilad Erdan: Israel making progress against Terror", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_TopStoryMainImageFaceDetect/429944", false, "תל אביב, ישראל", "Erdan is responsible for the fight against BDS in the Strategic Affairs Ministry, and the steps he has taken in that battle are controversial and unconventional." },
-                    { 10, 3, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+It's something of a miracle that Apple can continue to cram newer (and hotter) components into the tiny space behind the iMac's screen, but we're already ready for a bigger redesign.
 
+", new DateTime(2019, 4, 7, 8, 30, 52, 0, DateTimeKind.Unspecified), "Apple iMac 27-inch (2019)", "https://mollaks.com/id/wp-content/uploads/2017/10/iMac-27-2.png", true, "דיזינגוף 149, תל אביב", "Apple iMac 2019 is a millennial trapped in the body of a baby boomer" },
 
-                example paragraph
-                --
+{13, 3, @"Typically great Razer design, at its best in the alternate Mercury White color scheme. Excellent performance, especially considering the small size. One of the only gaming laptops with a very thin screen bezel.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+Faster RTX 2070 and RTX 2080 GPUs are not available in the white color scheme. The system can get very hot, which has led to some online complaints.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+The Razer Blade 15-inch gaming laptop keeps up with the Nvidia RTX trend. The base model feels expensive, but the higher-end version hits a good mix of price and performance.
+", new DateTime(2019, 3, 8, 8, 30, 52, 0, DateTimeKind.Unspecified), "Razer Blade Advanced (RTX 2060)", "https://assets.razerzone.com/eeimages/support/products/1517/1517_blade15_mid2019.png", true, "וייצמן 14, תל אביב", "One of our favorite gaming designs, but be prepared to pay for it" },
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+{14, 3, @"The HP Spectre x360 13 is one of the best ultraportable two-in-ones available with lots of component options including three display choices, multiple privacy and security features and class-leading battery life. HP includes a laptop sleeve and full-size active pen.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+Premium laptops come with premium prices. The low-power display is too dim for outdoor use.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+A stylish, thoughtful design, excellent component options and looooooong battery life all make the HP Spectre x360 13 one of the best premium two-in-one ultraportables around.
+", new DateTime(2019, 2, 2, 8, 30, 52, 0, DateTimeKind.Unspecified), "HP Spectre x360 (13-inch, 2019)", "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06138726.png", true, "החשמונאים 88, תל אביב", "A classy little laptop that can -- and will -- run all day" },
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 8, 6, 11, 10, 2, 0, DateTimeKind.Unspecified), "Comcast outbids 21st Century Fox for Sky", "https://i.cdn.turner.com/money/dam/assets/180920115724-comcast-fox-sky-780x439.jpg", false, "תל אביב, ישראל", "American cable giant Comcast lodged a winning bid of about $40 billion (£30.6 billion) for Sky following a rare, three round auction managed by UK's Takeover Panel" },
-                    { 11, 3, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+{15, 3, @"Lenovo's Yoga C930 puts its 360-degree hinges to work as the two-in-one's speaker system. The included active pen is discreetly housed and charged in the C930's body and its webcam has a physical slider to block it when not in use. Performance and battery life are excellent for its class.
 
+The included pen is a little small for extended use and there's no option for discrete graphics, but no real deal breakers unless you object to its price.
 
-                example paragraph
-                --
+Excellent performance and a stylish and functional design make the Lenovo Yoga C930 simply one of the best two-in-one laptops available.
+", new DateTime(2019, 6, 8, 8, 30, 52, 0, DateTimeKind.Unspecified), "Lenovo Yoga C930", "https://www.lenovo.com/medias/lenovo-laptop-yoga-c930-glass-hero.png?context=bWFzdGVyfHJvb3R8MTE1MDM5fGltYWdlL3BuZ3xoN2MvaDUyLzk4MzU5NDQ4Njk5MTgucG5nfDY1NTdiNGZkYTVjYWJhZThjZWFmODY4OWM2M2FjNGEzZjI3MjlkZmJjNGJmODliZDI0N2Q1ZGZmZWIxMDg2NGY", true, "החשמונאים 88, תל אביב", "Lenovo's top 2-in-1 perfected" },
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+{16, 4, @"Even faster speed, improved battery life. The iPhone 11's cameras get an excellent new Night Mode and an ultrawide-angle camera that can add extra detail in photos. Fantastic video camera.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+Only Pro models get the 2x telephoto. The ultrawide-angle camera doesn’t add Night Mode. No USB-C port. The Pro phones have a faster 18-watt charger but iPhone 11 doesn't. Still has a good (but not OLED) display.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+Apple may have skipped flashy extras on this year's phones, but the iPhone 11 is the best midtier model the company's ever made.
+", new DateTime(2019, 7, 9, 8, 30, 52, 0, DateTimeKind.Unspecified), "Apple iPhone 11", "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-max-midnight-green-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566953859350", true, "דיזינגוף 149, תל אביב", "The best $700 iPhone Apple has ever made" },
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+{17, 4, @"The Pixel 3A is cheaper than the original Pixel 3 but packs the same grade-A camera that shoots great in lowlight. It can also record time-lapse videos and has a headphone jack.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+The phone isn't water resistant and doesn't have wireless charging. Local storage is capped at 64GB, and Pixel 3A owners have unlimited uploads to Google Photos at a compressed high quality resolution, not original.
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 8, 6, 10, 10, 2, 0, DateTimeKind.Unspecified), "BMW vision's for a self-driving electric car", "https://i.cdn.turner.com/money/dam/assets/180913172656-bmw-inext-780x439.jpg", false, "תל אביב, ישראל", "BMW has unveiled its vision for a self-driving electric crossover SUV and, if it actually ends up being a lot like the concept." },
-                    { 6, 5, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+The Pixel 3A has the best camera for its price. But if a fast processor or more memory is your priority, get the OnePlus 6T instead.
+", new DateTime(2019, 9, 9, 8, 30, 52, 0, DateTimeKind.Unspecified), "Google Pixel 3A", "https://i1.wp.com/metro.co.uk/wp-content/uploads/2019/05/Google-Pixel-3a-2-6b07.png?quality=90&strip=all&zoom=1&resize=644%2C508&ssl=1", true, "וייצמן 14, תל אביב", "A cheaper Pixel 3 with the same great rear camera" },
 
+{18, 4, @"The OnePlus 7 Pro is fast, has a neat pop-up camera and its triple rear cameras take fantastic pictures -- all at $80 less than its closest Samsung and iPhone rivals.
 
-                example paragraph
-                --
+OnePlus' new phone is heavy and isn't rated for water resistance. It lacks wireless charging and a headphone jack.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+The OnePlus 7 Pro's camera, performance and price make it the go-to premium Android phone of 2019.
+", new DateTime(2019, 4, 10, 8, 30, 52, 0, DateTimeKind.Unspecified), "OnePlus 7 Pro", "https://www.yaphone.com/2716-tm_thickbox_default/oneplus-7-pro-256gb-dual-sim-8gb-ram-mirror-grey.jpg", true, "החשמונאים 88, תל אביב", "The best Android phone value of 2019" },
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+{19, 4, @"The Huawei P30 Pro's four cameras take astounding photos, its battery life is superb and the design is beautiful.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+Processor performance and screen resolution aren't up there with the best. The lack of headphone jack will upset people with wired headphones and the P30 Pro uses proprietary expandable storage.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+The Huawei P30 Pro's impressive camera skills and vibrant design easily beat the Galaxy S10 Plus and the Pixel 3, but political entanglements mean the phone won't come to the US.
+", new DateTime(2019, 7, 11, 8, 30, 52, 0, DateTimeKind.Unspecified), "Huawei P30 Pro", "https://smb.optus.com.au/opfiles/Shop/Shared%20Media/Devices/MobilePhones/huawei-p30-pro/huawei-P30-Pro-Breathing-Crystal.png", true, "החשמונאים 88, תל אביב", "The absolute best camera on any phone" },
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+{20, 4, @"The Galaxy Note 10 Plus delivers the premium goods, from a killer 6.8-inch screen and all-day battery life to excellent camera tools.
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2017, 3, 8, 11, 10, 2, 0, DateTimeKind.Unspecified), "Trails and Tribulations of Eurovision 2019, What to expect next?", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/429094", false, "תל אביב, ישראל", "For the next eight months, squabbles over politics, money and religion are bound to plague the upcoming Eurovision. But which arguments should be taken seriously?" },
-                    { 7, 5, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+The Bad The Note 10 Plus is expensive. There's no headphone jack, which will disappoint long-time Samsung fans. The depth-sensing camera is extremely limited.
 
+The Bottom Line Samsung closed the camera gap with rivals and created a top-of-the-line phone for people who want the best Android has to offer.", new DateTime(2019, 8, 16, 8, 30, 52, 0, DateTimeKind.Unspecified), "Samsung Galaxy Note 10", "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_500/https://touchit.co.il/wp-content/uploads/2019/08/%D7%A9%D7%97%D7%95%D7%A8-10.png", true, "החשמונאים 88, תל אביב", "The most premium Android phone for your money" },
 
-                example paragraph
-                --
+{21, 5, @"The Samsung Galaxy Tab S6 out-performs its predecessor with a more powerful processor, optimized DeX mode and increased storage space. It also gets a new minimalistic design and updated S Pen stylus.
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+The keyboard is not included, and it's expensive and takes time to adjust to its small keys. In the tablet/laptop hybrid wars, there’s little clamor for an Android model, especially in light of Android app support on Chromebooks.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+The Samsung Galaxy Tab S6 is a great update to last year’s premium Android tablet but doesn’t make the case for ditching the iPad Pro, Surface Pro or other options.
+", new DateTime(2019, 9, 17, 8, 30, 52, 0, DateTimeKind.Unspecified), "Samsung Galaxy Tab S6", "https://www.samsung.com/global/galaxy/galaxy-tab-s6/images/galaxy-tab-s6_roseblush_s.png", true, "וייצמן 14, תל אביב", "As good as Android tablets get" },
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+{22, 5, @"The Surface Pro 6's jump to new quad-core processors pays off in big performance gains. The new black color option looks cool. Still the best kickstand and keyboard for Windows tablets.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+Be ready to shell out extra for the keyboard cover, stylus and even for the new matte black design. CPU and color aside, it's a very minimal upgrade over the previous version.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+The latest Surface Pro tablet doesn't make any radical design changes, but the performance jump makes it viable as a mainstream performance laptop replacement.
+", new DateTime(2019, 3, 12, 8, 30, 52, 0, DateTimeKind.Unspecified), "Microsoft Surface Pro 6", "https://www.gravitygaming.com/wp-content/uploads/2018/04/surface-pro-6-new-1000x1000-png.png", true, "החשמונאים 88, תל אביב", "Racing ahead of last year's model" },
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 10, 30, 11, 10, 2, 0, DateTimeKind.Unspecified), "Livinng out the Baha'i: A journy to Israel", "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/429990", false, "תל אביב, ישראל", "More than a million people visit the gardens every year. Apart from being at the holiest site of his faith..." },
-                    { 8, 5, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+{23, 5, @"The Surface Go delivers Microsoft's great Surface design and accessories at a lower price and in a smaller size.
 
+The Pentium processor isn't suited for all tasks. A keyboard cover is a must-have add-on but still sold separately. And you'll probably want to pay extra for more storage and RAM, too. Battery life is lacking for a go-anywhere PC.
 
-                example paragraph
-                --
+The new Microsoft Surface Go is the perfect size for casual coffee-shop computing, but getting the full experience quickly drives up the price.
+", new DateTime(2019, 7, 5, 8, 30, 52, 0, DateTimeKind.Unspecified), "Microsoft Surface Go", "https://media.ao.com/en-GB/Productimages/Images/rvLarge/mhn-00002_microsoft_surfacego_02_l.png", true, "החשמונאים 88, תל אביב", "This shrunken-down Surface is fun and practical, but more expensive than it looks" },
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+{24, 5, @"The 2018 entry-level iPad supports the Apple Pencil for art work and annotation, and adds a faster A10 processor. iOS continues to offer the best overall selection of free and paid apps on affordable tablets.
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+Lacks the bigger, better screen, quad speakers and Smart Connector found on pricier iPad Pros. The Pencil, case and keyboard add-ons will bring the price up to laptop level.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+The 2018 entry-level iPad doesn't add much, but it makes an already excellent tablet a better buy than ever.
+", new DateTime(2019, 8, 5, 8, 30, 52, 0, DateTimeKind.Unspecified), "Apple iPad (9.7-inch, 2018)", "https://static-www.o2.co.uk/sites/default/files/product_images/tablets/apple_ipad_9_7_2018_32gb_silver/apple_ipad_9_7_2018_32gb_silver_sku_header.png", true, "דיזינגוף 149, תל אביב", "The iPad for everyone" },
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+{25, 5, @" The 2018 version of the Amazon Fire HD 8 has a few small upgrades, including a better front-facing camera and the ability to issue Alexa voice commands even with your screen on standby. Its 8-inch screen is bright, the speakers are loud and it offers expandable microSD storage and ample parental controls. Amazon Prime members can access gobs of free video, music and other content with their subscription.
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+Display isn't as sharp as the iPad's; to truly take advantage of what the tablet has to offer, you need an Amazon Prime membership; slow charging (takes 6 hours to fully cap battery).
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 9, 6, 11, 10, 2, 0, DateTimeKind.Unspecified), "Highlights: Texas snaps 4-game skid to No. 17 TCU", "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAAuljC.img?h=170&w=300&m=6&q=60&u=t&o=t&l=f&f=jpg&x=585&y=345", false, "תל אביב, ישראל", "Finland has produced more Formula One champions per capita than any other country in the world" },
-                    { 9, 6, @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
+The latest HD 8 isn't much of an upgrade over last year's model, but the 'always-ready' hands-free Alexa feature is a nice addition to what remains the best tablet value.
+", new DateTime(2019, 8, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "Amazon Fire HD 8 (2018)", "https://www.vidabox.com/media/wysiwyg/products_by_tablet/na_vesa.png", true, "וייצמן 14, תל אביב", "Small upgrades sweeten the deal just a bit" },
 
+{26, 6, @"The Logitech MX Anywhere 2 is a rechargeable wireless mouse for Macs and Windows PCs that offers smooth, precise operation, lots of customization options and decent ergonomics for a mobile mouse, and works on almost any surface. You can connect to up to three computers using Logitech's included Unifying Receiver USB dongle or opt for Bluetooth connectivity. A speed-adaptive scroll wheel lets you autoshift from click-to-click to hyperfast scrolling. Battery life is good.
 
-                example paragraph
-                --
+Ergonomics aren't as good as on Logitech's larger MX Master; the rechargeable battery isn't user-replaceable (but should last several years).
 
-                The statement from attorneys Debra Katz, Lisa Banks and Michael Bromwich came after a call Sunday with staff for the Senate Judiciary Committee. Kavanaugh has denied the allegations and said he wants to testify before the committee.
+The MX Anywhere 2 is a top-notch mobile mouse.
+", new DateTime(2019, 7, 17, 8, 30, 52, 0, DateTimeKind.Unspecified), "Logitech MX Anywhere 2", "https://assets.logitech.com/assets/65107/6/mx-anywhere-2s.png", true, "החשמונאים 88, תל אביב", "A high-performance mouse for mobile users" },
 
-                *""Despite actual threats to her safety and her life, Dr. Ford believes it is important for Senators to hear directly from her about the sexual assault committed against her,""* the statement read.
+{27, 6, @"The Logitech K380 is a compact, solidly built wireless Bluetooth keyboard that pairs with up to three devices at once and lets you toggles between them. It's compatible with most Bluetooth-enabled computers, tablets, and smartphones and offers long battery life at up to 2 years from two AAA batteries.
 
-                paragraph with image
-                --
-                *""We stand with the Iranian people against the scourge of radical Islamic terrorism and express our sympathy to them at this terrible time,""* she said Saturday.
+Keys may be a little cramped for users with very large hands; Caps Lock is a little close to the 'a' key and can be accidentally pressed.
 
-                The parade was part of nationwide celebrations in Iran to mark the 30th anniversary of the end of its eight-year war with Iraq.
-                Gunmen opened fire on armed forces marching inside a park as well as spectators who had gathered to watch the parade, Iranian armed forces spokesman Brig. Gen. Abolfazl Shekarchi told Mehr, a semi-official Iranian news agency.
-                All four attackers were killed during clashes with security forces, IRNA reported, citing the deputy governor-general of Khuzestan province, where the attack happened.
+With its ability to toggle between nearly any smartphone, tablet and most computers, Logitech's smooth-operating and affordable K380 is one of the best multidevice wireless keyboards you can buy.
+", new DateTime(2019, 1, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), "Logitech K380 Multi-Device Bluetooth Keyboard", "https://zdnet1.cbsistatic.com/hub/i/r/2017/03/26/25415333-0911-476d-a5de-5c7e79fdcaaf/resize/770xauto/6b5936f08e05493ef16d0104cedeb598/k380-blue.png", true, "וייצמן 14, תל אביב", "The best multidevice Bluetooth keyboard yet" },
 
-                ![](https://cdn.cnn.com/cnnnext/dam/assets/180922044651-iran-parade-attack-09-22-18-exlarge-169.jpg)
-                *Injured soldiers lie on the ground after Saturday's attack on a military parade Ahvaz, Iran.*
+{28, 6, @"The MX Master is a rechargeable wireless mouse for Macs and Windows PCs that offers smooth, precise operation, lots of customization options, good ergonomics, and works on almost any surface. You can connect to up to three computers using Logitech's included Unifying Receiver USB dongle or opt for Bluetooth connectivity. Speed-adaptive scroll wheel lets you auto-shift from click-to-click to hyper-fast scrolling and a thumbwheel lets you scroll side-to-side.
 
-                *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
-                Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-                ", new DateTime(2018, 9, 7, 11, 10, 2, 0, DateTimeKind.Unspecified), "Russia is still attacking the US and trying to help Trump", "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAAuljC.img?h=170&w=300&m=6&q=60&u=t&o=t&l=f&f=jpg&x=585&y=345", false, "תל אביב, ישראל", "Microsoft's revelation of yet another Russian operation assaulting democratic institutions -- including conservative think tanks that disagree with President Trump -- proves that Vladimir Putin is still trying to help Trump, writes Frida Ghitis." }
+It's somewhat expensive, and the rechargeable battery isn't user-replaceable (but should last several years).
+
+While somewhat pricey, the Logitech MX Master's expansive feature set and smooth operation make it a worthwhile purchase for power users seeking a high-performance wireless mouse.
+", new DateTime(2019, 1, 7, 8, 30, 52, 0, DateTimeKind.Unspecified), "Logitech MX Master", "https://assets.logitech.com/assets/65106/4/mx-master-2s.png", true, "וייצמן 14, תל אביב", "One smooth, feature-packed wireless mouse" },
+
+{29, 6, @"The BlackWidow Chroma V2 has very easily programmable macro keys, a full suite of gaming keyboard functionality and Razer Synapse compatibility.
+
+You're really going to need to weigh those features against a hefty price tag.
+
+The BlackWidow Chroma V2 is pretty much everything you want out of your gaming keyboard. But there are most cost effective options if you're not ensconced in the Razer ecosystem.
+", new DateTime(2019, 3, 4, 8, 30, 52, 0, DateTimeKind.Unspecified), "Razer BlackWidow Chroma V2", "https://www.gudanggaming.com/storage/store/products/razer-blackwidow-chroma-v2-gallery-02-wristrest.png", true, "החשמונאים 88, תל אביב", "Razer BlackWidow Chroma V2 is sweet, sweet overkill" },
+
+{30, 6, @"The Apple Magic Keyboard with Numeric Keypad has light, bouncy keys that are great to type with. The new number pad makes it easier to input figures or work with some creative software shortcuts. It pairs easily and lasts a long time between charges.
+
+The flat design can put strain on your wrist. The lack of backlight makes it harder to work with the keys at night.
+
+Apple's slim, light, wireless Magic Keyboard gets a makeover, bringing back the number pad previously found in the old wired version. But it also costs more, so the standard Magic Keyboard may be better for you.
+", new DateTime(2019, 7, 7, 8, 30, 52, 0, DateTimeKind.Unspecified), "Apple Magic Keyboard", "http://cdn.shopify.com/s/files/1/0021/9863/4571/products/Apple_A1255_1_9bcebc54-3eb4-41ea-bcf1-b1b631e2f26a_grande.png?v=1557691011", true, "דיזינגוף 149, תל אביב", "Apple's new keyboard rescues the number pad" }
+
                 });
 
             migrationBuilder.InsertData(
