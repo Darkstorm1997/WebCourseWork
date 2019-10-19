@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Remove="Migrations\20180919165027_Initiat-Data5.cs" />
     <Compile Remove="Migrations\20180919165027_Initiat-Data5.Designer.cs" />
+    <Compile Remove="Migrations\TecReviewContextModelSnapshot.cs" />
   </ItemGroup>
 
   <ItemGroup>
