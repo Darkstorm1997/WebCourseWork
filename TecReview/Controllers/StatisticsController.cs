@@ -1,14 +1,10 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using TecReview.Models;
-using Newtonsoft.Json;
 
 namespace TecReview.Controllers
 {
@@ -30,7 +26,7 @@ namespace TecReview.Controllers
 
         public async Task<IActionResult> Comments()
         {
-            var monthlyComments = await _context.Comments.GroupBy(x => new { x.DatePosted.Year, x.DatePosted.Month }).ToListAsync();
+            var monthlyComments = await _context.Comments.GroupBy(c => new { c.DatePosted.Year, c.DatePosted.Month }).ToListAsync();
 
             var statistics = monthlyComments.Select(monthGroup => new {
                 month = monthGroup.First().DatePosted.Month.ToString() + '/' + monthGroup.First().DatePosted.Year.ToString(),

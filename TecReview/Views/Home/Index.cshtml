@@ -6,9 +6,9 @@
 <div>
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between border rounded">
-            @foreach (var c in (Dictionary<Category, List<Item>>)ViewData["Categories"])
+            @foreach (var category in (List<Category>)ViewData["Categories"])
             {
-                <a asp-controller="Categories" asp-action="Details" asp-route-id="@c.Key.CategoryId" class="nav-link" style="">@c.Key.Name</a>
+                <a asp-controller="Categories" asp-action="Details" asp-route-id="@category.CategoryId" class="nav-link" style="">@category.Name</a>
             }
         </nav>
     </div>
@@ -28,12 +28,12 @@
 
         <div class="col-md-2">
             <h3 class="pb-3 mb-4 border-bottom">Recent</h3>
-            @foreach (Item ar in ((List<Item>)ViewData["Recent"]))
+            @foreach (Item item in ((List<Item>)ViewData["Recent"]))
             {
                 <div class="card">
-                    <a asp-controller="Items" asp-action="Details" asp-route-id="@ar.ItemId">
-                        <img src="@ar.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true"/>
-                        <h4>@ar.Header</h4>
+                    <a asp-controller="Items" asp-action="Details" asp-route-id="@item.ItemId">
+                        <img src="@item.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true"/>
+                        <h4>@item.Header</h4>
                     </a>
                 </div>
             }
