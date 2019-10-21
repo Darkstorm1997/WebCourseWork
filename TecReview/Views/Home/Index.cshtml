@@ -2,6 +2,15 @@
 @{
     ViewData["Title"] = "Home";
 }
+<!--Logo-->
+<img src="~/images/TecReviewLogo1.jpg" style="width:500px;height:105px;" class="center" />
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
 
 <div>
     <div class="nav-scroller py-1 mb-2">
@@ -32,7 +41,7 @@
             {
                 <div class="card">
                     <a asp-controller="Items" asp-action="Details" asp-route-id="@ar.ItemId">
-                        <img src="@ar.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true"/>
+                        <img src="@ar.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true" />
                         <h4>@ar.Header</h4>
                     </a>
                 </div>
