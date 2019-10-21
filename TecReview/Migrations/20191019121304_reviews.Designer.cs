@@ -10,8 +10,8 @@ using TecReview.Models;
 namespace TecReview.Migrations
 {
     [DbContext(typeof(TecReviewContext))]
-    [Migration("20191016152342_init")]
-    partial class init
+    [Migration("20191019121304_reviews")]
+    partial class reviews
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -202,7 +202,7 @@ namespace TecReview.Migrations
                         new { CategoryId = 1, ColorARGB = -15132304, Description = "All about high quality headphones", Name = "Headphones" },
                         new { CategoryId = 2, ColorARGB = -7667573, Description = "Speaks for home and for studio", Name = "Speakers" },
                         new { CategoryId = 3, ColorARGB = -16751616, Description = "Laptops and desktops", Name = "Computers" },
-                        new { CategoryId = 4, ColorARGB = -7667712, Description = "iPhone, Samsung and mor", Name = "Cellphones" },
+                        new { CategoryId = 4, ColorARGB = -7667712, Description = "iPhone, Samsung and more", Name = "Cellphones" },
                         new { CategoryId = 5, ColorARGB = -2354116, Description = "Small computers which could be carried to anywhere", Name = "Tablets" },
                         new { CategoryId = 6, ColorARGB = -13726889, Description = "Mouse, keyboards and more", Name = "Accessories" }
                     );
@@ -267,7 +267,8 @@ namespace TecReview.Migrations
 
                     b.HasData(
                         new { ItemId = 1, CategoryId = 1, Content = "content", DateCreated = new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), Header = "Sony WH-1000XM3", HomeImageUrl = "https://www.sony.co.in/image/4b3139b30cb85e0d3a03a94ab738b7b7?fmt=png-alpha&wid=1014&hei=396", IsShowMap = true, Location = "החשמונאים 88, תל אביב", Summery = "Best noise canceling headphones" });
-                });
+
+        });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {

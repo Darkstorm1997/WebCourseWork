@@ -197,12 +197,12 @@ namespace TecReview.Migrations
                     b.ToTable("Categories");
 
                     b.HasData(
-                        new { CategoryId = 1, ColorARGB = -15132304, Description = "World wide news", Name = "World" },
-                        new { CategoryId = 2, ColorARGB = -7667573, Description = "Debates and conflicts", Name = "Politics" },
-                        new { CategoryId = 3, ColorARGB = -16751616, Description = "Trade, commerce and money", Name = "Business" },
-                        new { CategoryId = 4, ColorARGB = -7667712, Description = "And its a score!", Name = "Sports" },
-                        new { CategoryId = 5, ColorARGB = -2354116, Description = "Music, movies and the starts", Name = "Culture" },
-                        new { CategoryId = 6, ColorARGB = -13726889, Description = "I Think...", Name = "Opinions" }
+                        new { CategoryId = 1, ColorARGB = -15132304, Description = "All about high quality headphones", Name = "Headphones" },
+                        new { CategoryId = 2, ColorARGB = -7667573, Description = "Speaks for home and for studio", Name = "Speakers" },
+                        new { CategoryId = 3, ColorARGB = -16751616, Description = "Laptops and desktops", Name = "Computers" },
+                        new { CategoryId = 4, ColorARGB = -7667712, Description = "iPhone, Samsung and more", Name = "Cellphones" },
+                        new { CategoryId = 5, ColorARGB = -2354116, Description = "Small computers which could be carried to anywhere", Name = "Tablets" },
+                        new { CategoryId = 6, ColorARGB = -13726889, Description = "Mouse, keyboards and more", Name = "Accessories" }
                     );
                 });
 
@@ -287,7 +287,7 @@ All four attackers were killed during clashes with security forces, IRNA reporte
 
 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-", DateCreated = new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), Header = "Iran blames US and Saudi Arabia for terror attack", HomeImageUrl = "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", IsShowMap = true, Location = "טהרן, אירן", Summery = "Iran blames the US and Saudi Arabia for military parade terror attack" },
+", DateCreated = new DateTime(2018, 5, 1, 8, 30, 52, 0, DateTimeKind.Unspecified), Header = "Iran111 blames US and Saudi Arabia for terror attack", HomeImageUrl = "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Item2016_ControlFaceDetect/427101", IsShowMap = true, Location = "חלווה, אירן", Summery = "test333 the US and Saudi Arabia for military parade terror attack" },
                         new { ItemId = 2, CategoryId = 2, Content = @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 
@@ -335,7 +335,7 @@ All four attackers were killed during clashes with security forces, IRNA reporte
 
 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-", DateCreated = new DateTime(2018, 3, 7, 2, 22, 23, 0, DateTimeKind.Unspecified), Header = "Russia: We were mislead by israel", HomeImageUrl = "https://images.haarets.co.il/image/upload/w_2184,h_1270,x_0,y_75,c_crop,g_north_west/w_857,h_482,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/v1537691679/1.6494059.1232180831.jpg", IsShowMap = true, Location = "תל אביב, ישראל", Summery = "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk." },
+", DateCreated = new DateTime(2018, 3, 7, 2, 22, 23, 0, DateTimeKind.Unspecified), Header = "test 123 mislead by israel", HomeImageUrl = "https://images.haarets.co.il/image/upload/w_2184,h_1270,x_0,y_75,c_crop,g_north_west/w_857,h_482,q_auto,c_fill,f_auto/fl_any_format.preserve_transparency.progressive:none/v1537691679/1.6494059.1232180831.jpg", IsShowMap = true, Location = "תל אביב, ישראל", Summery = "Maj. Gen. Igor Konashenkov, chief spokesman for the Russian Ministry of Defense, said that Israeli strikes in Syria put Russian forces there at risk." },
                         new { ItemId = 4, CategoryId = 1, Content = @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 
@@ -503,7 +503,7 @@ All four attackers were killed during clashes with security forces, IRNA reporte
 
 *""The terrorists disguised as Islamic Revolution Guards Corps and Basij (volunteer) forces opened fire to the authority and people from behind the stand during the parade,""* said Gholam-Reza Shariati, governor of Khuzestan province, according to IRNA.
 Khuzestan is a province that borders Iraq and has a large ethnic Arab community, many of them Sunni. It was a major battleground during the Iran-Iraq War that killed half a million soldiers in the '80s.
-", DateCreated = new DateTime(2018, 8, 6, 11, 10, 2, 0, DateTimeKind.Unspecified), Header = "Comcast outbids 21st Century Fox for Sky", HomeImageUrl = "https://i.cdn.turner.com/money/dam/assets/180920115724-comcast-fox-sky-780x439.jpg", IsShowMap = false, Location = "תל אביב, ישראל", Summery = "American cable giant Comcast lodged a winning bid of about $40 billion (£30.6 billion) for Sky following a rare, three round auction managed by UK's Takeover Panel" },
+", DateCreated = new DateTime(2018, 8, 6, 11, 10, 2, 0, DateTimeKind.Unspecified), Header = "Test 123", HomeImageUrl = "https://i.cdn.turner.com/money/dam/assets/180920115724-comcast-fox-sky-780x439.jpg", IsShowMap = false, Location = "תל אביב, ישראל", Summery = "American cable giant Comcast lodged a winning bid of about $40 billion (£30.6 billion) for Sky following a rare, three round auction managed by UK's Takeover Panel" },
                         new { ItemId = 11, CategoryId = 3, Content = @"Perhaps inspired by the success of 2014's Unfriended, this mystery ventures in fresh, new directions while being superbly constructed, emotionally satisfying, and culturally relevant. David Kim becomes desperate when his 16-year-old daughter Margot disappears and an immediate police investigation leads nowhere. He soon decides to search the one place that no one else has -- Margot's laptop. Hoping to trace her digital footprints, David contacts her friends and looks at photos and videos for any possible clues to her whereabouts. , **bolds**, *""quotes""* and others.
 
 
