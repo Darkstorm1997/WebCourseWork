@@ -1,5 +1,3 @@
-using System;
-
 namespace TecReview.Models
 {
     public class ErrorViewModel

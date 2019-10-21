@@ -1,16 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using System.Threading.Tasks;
 using TecReview.Models;
 
 
@@ -56,13 +49,17 @@ namespace TecReview.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return RedirectToLocal(returnUrl);
+
+                    if (Url.IsLocalUrl(returnUrl))
+                    {
+                        return Redirect(returnUrl);
+                    }
+                    
+                    return RedirectToAction(nameof(HomeController.Index), "Home");
                 }
                 else
                 {
@@ -71,7 +68,6 @@ namespace TecReview.Controllers
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
         
@@ -83,21 +79,5 @@ namespace TecReview.Controllers
             _logger.LogInformation("User logged out.");
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
-
-        #region Helpers
-
-        private IActionResult RedirectToLocal(string returnUrl)
-        {
-            if (Url.IsLocalUrl(returnUrl))
-            {
-                return Redirect(returnUrl);
-            }
-            else
-            {
-                return RedirectToAction(nameof(HomeController.Index), "Home");
-            }
-        }
-
-        #endregion
     }
 }

@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using TecReview.Models;
 
 namespace TecReview.Controllers
@@ -28,7 +27,7 @@ namespace TecReview.Controllers
                 categories.Add(c, await GetFeatured(c).ToListAsync());
             }
 
-            ViewData["Categories"] = categories;
+            ViewData["Categories"] = await _context.Categories.ToListAsync();
 
             ViewData["MainItem"] = null;
             ViewData["Recent"] = null;
@@ -44,8 +43,6 @@ namespace TecReview.Controllers
 
                 ViewData["Recent"] = await _context.Items.OrderByDescending(x => x.DateCreated).Take(3).ToListAsync();
             }
-            
-            
 
             return View();
         }
