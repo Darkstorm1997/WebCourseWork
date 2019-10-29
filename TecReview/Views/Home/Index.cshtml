@@ -2,15 +2,24 @@
 @{
     ViewData["Title"] = "Home";
 }
+
 <!--Logo-->
-<img src="~/images/TecReview 1.jpg" style="width:500px;height:105px;" class="center" />
+<img src="~/images/Tec logo .png" style="width:600px;height:120px;" class="center" />
 <style>
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    </style>
+</style>
+
+<!--video-->
+<div style="text-align:center">
+    <video width="480" height="240" controls>
+        <source src="~/video/unboxing.mp4" type="video/mp4">
+    </video>
+</div>
+
 <div>
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between border rounded">
@@ -40,7 +49,7 @@
             {
                 <div class="card">
                     <a asp-controller="Items" asp-action="Details" asp-route-id="@item.ItemId">
-                        <img src="@item.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true"/>
+                        <img src="@item.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true" />
                         <h4>@item.Header</h4>
                     </a>
                 </div>
