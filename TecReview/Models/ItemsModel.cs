@@ -12,20 +12,27 @@ namespace TecReview.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime? DateCreated { get; set; }
 
+        [Required]
         public string Header { get; set; }
 
+        [Required]
         public string Summery { get; set; }
-        
+
+        [Required]
         public string Content { get; set; }
 
+        [Required]
         public string HomeImageUrl { get; set; }
 
+        [Required]
         public int CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
 
+        [Required]
         public string Location { get; set; }
 
+        [Required]
         public bool IsShowMap { get; set; }
 
         public List<Comment> Comments { get; set; }
