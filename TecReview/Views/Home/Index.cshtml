@@ -3,57 +3,115 @@
     ViewData["Title"] = "Home";
 }
 
-<!--Logo-->
-<img src="~/images/Tec logo .png" style="width:600px;height:120px;" class="center" />
-<style>
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
+<br />
+<canvas id="loading-canvas" style="margin: auto; display: block"></canvas>
 
-<!--video-->
-<div style="text-align:center">
-    <video width="480" height="240" controls>
-        <source src="~/video/unboxing.mp4" type="video/mp4">
-    </video>
-</div>
+<div id="home-page" style="display: none">
+    <!--Logo-->
+    <img src="~/images/Tec logo .png" style="width:600px;height:120px;" class="center" />
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 
-<div>
-    <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between border rounded">
-            @foreach (var category in (List<Category>)ViewData["Categories"])
-            {
-                <a asp-controller="Categories" asp-action="Details" asp-route-id="@category.CategoryId" class="nav-link" style="">@category.Name</a>
-            }
-        </nav>
+    <!--video-->
+    <div style="text-align:center">
+        <video width="480" height="240" controls>
+            <source src="~/video/unboxing.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <div class="row mb-2">
-        <div class="col-md-10">
-            <div class="row">
-                @foreach (Item item in (List<Item>)ViewData["MainItems"])
+    <div>
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between border rounded">
+                @foreach (var category in (List<Category>)ViewData["Categories"])
                 {
-                    <div class="col-md-4">
-                        <partial name="_ItemVertical" model="item" />
+                    <a asp-controller="Categories" asp-action="Details" asp-route-id="@category.CategoryId" class="nav-link" style="">@category.Name</a>
+                }
+            </nav>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-10">
+                <div class="row">
+                    @foreach (Item item in (List<Item>)ViewData["MainItems"])
+                    {
+                        <div class="col-md-4">
+                            <partial name="_ItemVertical" model="item" />
+                        </div>
+                    }
+                </div>
+            </div>
+
+
+            <div class="col-md-2">
+                <h3 class="pb-3 mb-4 border-bottom">Recent</h3>
+                @foreach (Item item in ((List<Item>)ViewData["Recent"]))
+                {
+                    <div class="card">
+                        <a asp-controller="Items" asp-action="Details" asp-route-id="@item.ItemId">
+                            <img src="@item.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true" />
+                            <h4>@item.Header</h4>
+                        </a>
                     </div>
                 }
             </div>
         </div>
-
-
-        <div class="col-md-2">
-            <h3 class="pb-3 mb-4 border-bottom">Recent</h3>
-            @foreach (Item item in ((List<Item>)ViewData["Recent"]))
-            {
-                <div class="card">
-                    <a asp-controller="Items" asp-action="Details" asp-route-id="@item.ItemId">
-                        <img src="@item.HomeImageUrl" class="img-fluid img-thumbnail" data-toggle="tooltip" data-placement="right" data-html="true" />
-                        <h4>@item.Header</h4>
-                    </a>
-                </div>
-            }
-        </div>
     </div>
 </div>
+
+
+@section Scripts
+    {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        });
+
+        
+        function progress_bar() {
+            this.width = 0;
+
+            this.draw = function () {
+                ctx.fillStyle = "#33cc33";
+                ctx.fillRect(25, 80, this.width, 25);
+            }
+        }
+
+        function draw_progress_bar() {
+            bar.width += 6;
+            if (bar.width > 350) {
+                $("#home-page").show();
+                $("#loading-canvas").hide();
+            }
+
+            bar.draw();
+
+            requestAnimFrame(draw_progress_bar);
+        }
+
+        // Init requestAnimFrame
+        window.requestAnimFrame = (function () {
+            return window.requestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
+
+        // Init canvas
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var ctx = canvas.getContext("2d");
+
+        canvas.width = 400;
+        canvas.height = 200;
+
+        bar = new progress_bar();
+        
+        draw_progress_bar();
+    </script>
+}

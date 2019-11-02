@@ -1,18 +1,23 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TecReview.Models
 {
     public class Category
     {
+        [Required]
         public int CategoryId { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
+        [Required]
         public string Description { get; set; }
 
         public List<Item> Items { get; set; }
 
+        [Required]
         public int ColorARGB { get; private set; }
 
         [NotMapped()]
