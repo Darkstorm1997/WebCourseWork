@@ -251,6 +251,9 @@ namespace TecReview.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.Categories = new SelectList(_context.Categories, "CategoryId", "Name");
+
             return View(item);
         }
 
