@@ -16,7 +16,7 @@ namespace TecReview.Models
         public string Header { get; set; }
 
         [Required]
-        public string Summery { get; set; }
+        public string Summary { get; set; }
 
         [Required]
         public string Content { get; set; }

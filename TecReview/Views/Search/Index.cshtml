@@ -37,7 +37,7 @@
                 <input id="title-input" type="text" class="form-control" placeholder="Item name" />
             </div>
             <div class="col-sm">
-                <input id="summery-input" type="text" class="form-control" placeholder="Item Summery" />
+                <input id="summary-input" type="text" class="form-control" placeholder="Item Summary" />
             </div>
             <div class="col-sm">
                 <input id="items-date-input" type="date" class="form-control" />
@@ -101,7 +101,7 @@
                 get_searched_items(
                     $('#cat-input').val(),
                     $('#title-input').val(),
-                    $('#summery-input').val(),
+                    $('#summary-input').val(),
                     $('#items-date-input').val()
                 ).then(function (items) {
                     $("#searched-results").html("");

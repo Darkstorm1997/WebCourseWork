@@ -84,7 +84,7 @@ namespace TecReview.Controllers
             return Json(comments);
         }
 
-        public async Task<IActionResult> Search(int? category, string header, string summery, DateTime? date)
+        public async Task<IActionResult> Search(int? category, string header, string summary, DateTime? date)
         {
             var result = _context.Items.AsQueryable();
 
@@ -92,8 +92,8 @@ namespace TecReview.Controllers
                 result = result.Where(x => x.CategoryId == category);
             if (!String.IsNullOrWhiteSpace(header))
                 result = result.Where(x => x.Header.Contains(header));
-            if (!String.IsNullOrWhiteSpace(summery))
-                result = result.Where(x => x.Summery.Contains(summery));
+            if (!String.IsNullOrWhiteSpace(summary))
+                result = result.Where(x => x.Summary.Contains(summary));
             if (date.HasValue)
                 result = result.Where(x => x.DateCreated.Value.Date == date.Value.Date);
 
@@ -177,7 +177,7 @@ namespace TecReview.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Create([Bind("Header,Summery,Content,HomeImageUrl,CategoryId,Location,IsShowMap")] Item itemModel)
+        public async Task<IActionResult> Create([Bind("Header,Summary,Content,HomeImageUrl,CategoryId,Location,IsShowMap")] Item itemModel)
         {
             if (ModelState.IsValid)
             {
@@ -216,7 +216,7 @@ namespace TecReview.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public async Task<IActionResult> Edit(int id, [Bind("ItemId,Header,Summery,Content,HomeImageUrl,CategoryId,Location,IsShowMap")] Item item)
+        public async Task<IActionResult> Edit(int id, [Bind("ItemId,Header,Summary,Content,HomeImageUrl,CategoryId,Location,IsShowMap")] Item item)
         {
             if (id != item.ItemId)
             {
@@ -230,7 +230,7 @@ namespace TecReview.Controllers
                     _context.Items.Attach(item);
                     _context.Entry(item).Property(x => x.Content).IsModified = true;
                     _context.Entry(item).Property(x => x.Header).IsModified = true;
-                    _context.Entry(item).Property(x => x.Summery).IsModified = true;
+                    _context.Entry(item).Property(x => x.Summary).IsModified = true;
                     _context.Entry(item).Property(x => x.HomeImageUrl).IsModified = true;
                     _context.Entry(item).Property(x => x.CategoryId).IsModified = true;
                     _context.Entry(item).Property(x => x.Location).IsModified = true;
