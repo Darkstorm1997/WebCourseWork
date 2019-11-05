@@ -43,12 +43,12 @@ var new_comment = function (author, content, item_id) {
     })
 }
 
-var get_searched_items = function (category, title, summery, date) {
+var get_searched_items = function (category, title, summary, date) {
     return new Promise(resolve => {
         $.ajax({
             type: "GET",
             url: "/Items/Search/",
-            data: { category: category, header: title, summery: summery, date: date },
+            data: { category: category, header: title, summary: summary, date: date },
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (items) {
